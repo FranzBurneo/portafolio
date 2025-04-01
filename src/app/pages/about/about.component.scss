@@ -1,0 +1,206 @@
+.about {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+    .about-content {
+        max-width: 900px;
+        text-align: center;
+
+        h2 {
+            font-size: 2.4rem;
+            color: #00d1b2;
+            margin-bottom: 2rem;
+        }
+
+        .intro {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .section {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid #eee;
+
+            h3 {
+                font-size: 1.6rem;
+                margin-bottom: 1.5rem;
+                color: #111;
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+
+            .card {
+                padding: 1rem;
+                background-color: #f9f9f9;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                font-weight: 500;
+                transition: transform 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
+            }
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+
+            li {
+                margin-bottom: 2rem;
+
+                strong {
+                    display: block;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.3rem;
+                }
+
+                p {
+                    margin: 0.5rem 0 0;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
+/* Animación de entrada si usas appScrollReveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.experience-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+    .header {
+        margin-bottom: 1rem;
+
+        h4 {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        a {
+            font-size: 1rem;
+            color: #007f77;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    }
+
+    .responsibilities {
+        list-style: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        span {
+            background-color: #e6fdfc;
+            color: #007f77;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.education-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+
+    .header {
+        margin-bottom: 1rem;
+
+        h4 {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .institution {
+            font-style: italic;
+            color: #444;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+        margin-bottom: 1rem;
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        span {
+            background-color: #e6fdfc;
+            color: #007f77;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    }
+}
