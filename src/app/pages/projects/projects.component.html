@@ -1,1 +1,187 @@
-<p>projects works!</p>
+<section class="projects-section">
+  <h2>Proyectos</h2>
+
+  <div class="projects-grid">
+    <!-- Proyecto: Gestiona App -->
+    <div class="project-card mobile">
+      <div class="gallery-wrapper">
+        <!-- Imagen principal -->
+        <img class="main-image" [src]="selectedGestionaImage" alt="Imagen destacada" />
+
+        <!-- Miniaturas -->
+        <div class="thumbnail-list">
+          <img *ngFor="let img of gestionImages" [src]="img" alt="Miniatura"
+            [class.active]="img === selectedGestionaImage" (click)="selectedGestionaImage = img" />
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3 class="title">Gestiona App <span>- CoopMego</span></h3>
+        <p class="description">
+          App móvil para ventas y cobranzas: agenda visitas, registra ventas, simula productos financieros y gestiona
+          intereses de clientes.
+        </p>
+        <p class="description">
+          Participé en el desarrollo del backend de esta aplicación móvil para los asesores de negocios y de cobranzas
+          de CoopMego.
+        </p>
+
+        <ul class="tech-stack">
+          <li>.Net 8</li>
+          <li>C#</li>
+          <li>Sybase</li>
+          <li>PostgreSQL</li>
+          <li>MongoDb</li>
+          <li>Jwt</li>
+          <li>gRPC</li>
+          <li>Stored Procedures</li>
+          <li>Microservicios</li>
+          <li>Jenkins</li>
+          <li>Docker</li>
+          <li>Encriptación de tramas</li>
+          <li>Flutter</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=com.coopmego.gestiona&hl=en" target="_blank">
+            🌐 Ver en Play Store
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Proyecto: Loja Sostenible Web (modo vertical) -->
+    <div class="project-card web vertical">
+      <div class="gallery-wrapper">
+        <img class="main-image" [src]="selectedLsWebImage" alt="Imagen destacada Loja Sostenible" />
+
+        <div class="thumbnail-list">
+          <img *ngFor="let img of lsWebImages" [src]="img" alt="Miniatura Loja Sostenible"
+            [class.active]="img === selectedLsWebImage" (click)="selectedLsWebImage = img" />
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3 class="title">Loja Sostenible Web</h3>
+        <p class="description">
+          Plataforma web para promover los Objetivos de Desarrollo Sostenible (ODS) en Loja. Facilita la colaboración
+          entre ciudadanos, organizaciones e instituciones.
+        </p>
+        <p class="description">
+          Permite registro de usuarios, gestión de publicaciones, interacción mediante comentarios, creación de
+          encuestas, y acceso a secciones informativas.
+        </p>
+
+        <ul class="tech-stack">
+          <li>React.js</li>
+          <li>React Router</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Axios</li>
+          <li>Firebase</li>
+          <li>Material-UI</li>
+          <li>Jwt</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://github.com/FranzBurneo/web-loja-sostenible" target="_blank" style="margin-right: 1rem;">
+            🌐 Ver en GitHub (Frontend)
+          </a>
+          <a href="https://github.com/FranzBurneo/ws-loja-sostenible" target="_blank">
+            🔗 Ver Backend
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Proyecto: Loja Sostenible Móvil -->
+    <div class="project-card mobile">
+      <div class="gallery-wrapper">
+        <!-- Imagen principal -->
+        <img class="main-image" [src]="selectedLsMovilImage" alt="Imagen destacada Loja Sostenible Mobile" />
+
+        <!-- Miniaturas -->
+        <div class="thumbnail-list">
+          <img *ngFor="let img of lsMovilImages" [src]="img" alt="Miniatura Loja Sostenible Mobile"
+            [class.active]="img === selectedLsMovilImage" (click)="selectedLsMovilImage = img" />
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3 class="title">Loja Sostenible App <span>- Mobile</span></h3>
+        <p class="description">
+          Aplicación móvil diseñada para promover los Objetivos de Desarrollo Sostenible (ODS) en Loja. Desarrollada en
+          Flutter, ofrece una experiencia multiplataforma amigable para los usuarios.
+        </p>
+
+        <p class="description">
+          Los usuarios pueden registrarse, explorar publicaciones, interactuar mediante comentarios, participar en
+          encuestas y contribuir con contenido relacionado a los ODS.
+        </p>
+
+        <ul class="tech-stack">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Firebase</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Jwt</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://github.com/FranzBurneo/flutter-loja-sostenible" target="_blank" style="margin-right: 1rem;">
+            🌐 Ver en GitHub (Frontend)
+          </a>
+          <a href="https://github.com/FranzBurneo/ws-loja-sostenible" target="_blank">
+            🔗 Ver Backend
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Proyecto: DigiMenu Web (modo vertical) -->
+    <div class="project-card web vertical">
+      <div class="gallery-wrapper">
+        <img class="main-image" [src]="selectedDigiMenuImage" alt="Imagen destacada Menu Digital" />
+
+        <div class="thumbnail-list">
+          <img *ngFor="let img of digiMenuImages" [src]="img" alt="Miniatura Menu Digital"
+            [class.active]="img === selectedDigiMenuImage" (click)="selectedDigiMenuImage = img" />
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3 class="title">Menú Digital Web</h3>
+        <p class="description">
+          Plataforma web para restaurantes que permite mostrar menús digitales interactivos de forma organizada,
+          accesible y atractiva.
+        </p>
+        <p class="description">
+          Los restaurantes pueden presentar sus categorías y productos destacados, permitiendo a los usuarios explorar
+          fácilmente el menú, filtrar por categoría, ver precios, descripciones e imágenes.
+        </p>
+        <p class="description">
+          Incluye panel de administración para gestionar categorías e ítems del menú, todo en una experiencia moderna y
+          responsiva.
+        </p>
+
+        <ul class="tech-stack">
+          <li>Next.js</li>
+          <li>React</li>
+          <li>Chakra UI</li>
+          <li>Firebase</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Prisma</li>
+          <li>PostgreSQL</li>
+          <li>Cloudinary</li>
+          <li>Jwt</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://digimenu-production-3032.up.railway.app/" target="_blank">
+            🌐 Ver Sitio Desplegado
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
