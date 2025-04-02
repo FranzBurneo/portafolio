@@ -7,10 +7,10 @@
     <a routerLink="/contact" routerLinkActive="active">{{ t('NAV.CONTACT') }}</a>
   </nav>
 
-  <select #langSelect (change)="changeLang(langSelect.value)">
+  <select #langSelect (change)="changeLang(langSelect.value)" class="lang-select">
     <option value="es">ES</option>
     <option value="en">EN</option>
-  </select>
+  </select>  
 </header>
 
 <main>

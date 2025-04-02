@@ -58,5 +58,49 @@
             "DATES": "2016 – 2021 · Ecuador",
             "DESC": "Realicé una aplicación colaborativa web y móvil para incentivar el desarrollo sostenible, utilizando <strong>React</strong>, <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>Firebase</strong>. También desarrollé una aplicación móvil en <strong>Java</strong> para reconocimiento de texto en imágenes, entre otros proyectos personales."
         }
+    },
+    "PROJECTS_SECTION": {
+        "TITLE": "Proyectos",
+        "GESTIONA": {
+            "TITLE": "Gestiona App",
+            "SUBTITLE": "CoopMego",
+            "DESCRIPTION_1": "App móvil para ventas y cobranzas: agenda visitas, registra ventas, simula productos financieros y gestiona intereses de clientes.",
+            "DESCRIPTION_2": "Participé en el desarrollo del backend de esta aplicación móvil para los asesores de negocios y de cobranzas de CoopMego.",
+            "LINK": "Ver en Play Store"
+        },
+        "LS_WEB": {
+            "TITLE": "Loja Sostenible Web",
+            "DESCRIPTION_1": "Plataforma web para promover los Objetivos de Desarrollo Sostenible (ODS) en Loja. Facilita la colaboración entre ciudadanos, organizaciones e instituciones.",
+            "DESCRIPTION_2": "Permite registro de usuarios, gestión de publicaciones, interacción mediante comentarios, creación de encuestas, y acceso a secciones informativas.",
+            "LINK_FRONT": "Ver en GitHub (Frontend)",
+            "LINK_BACK": "Ver Backend"
+        },
+        "LS_MOBILE": {
+            "TITLE": "Loja Sostenible App",
+            "SUBTITLE": "Mobile",
+            "DESCRIPTION_1": "Aplicación móvil diseñada para promover los Objetivos de Desarrollo Sostenible (ODS) en Loja. Desarrollada en Flutter, ofrece una experiencia multiplataforma amigable para los usuarios.",
+            "DESCRIPTION_2": "Los usuarios pueden registrarse, explorar publicaciones, interactuar mediante comentarios, participar en encuestas y contribuir con contenido relacionado a los ODS.",
+            "LINK_FRONT": "Ver en GitHub (Frontend)",
+            "LINK_BACK": "Ver Backend"
+        },
+        "DIGIMENU": {
+            "TITLE": "Menú Digital Web",
+            "DESCRIPTION_1": "Plataforma web para restaurantes que permite mostrar menús digitales interactivos de forma organizada, accesible y atractiva.",
+            "DESCRIPTION_2": "Los restaurantes pueden presentar sus categorías y productos destacados, permitiendo a los usuarios explorar fácilmente el menú, filtrar por categoría, ver precios, descripciones e imágenes.",
+            "DESCRIPTION_3": "Incluye panel de administración para gestionar categorías e ítems del menú, todo en una experiencia moderna y responsiva.",
+            "LINK": "Ver Sitio Desplegado"
+        }
+    },
+    "CONTACT": {
+        "TITLE": "Contacto",
+        "NAME": "Nombre",
+        "EMAIL": "Correo electrónico",
+        "TITLE_FIELD": "Asunto",
+        "MESSAGE": "Mensaje",
+        "SEND": "Enviar mensaje",
+        "SUCCESS": "¡Mensaje enviado exitosamente!",
+        "ERROR": "Hubo un error al enviar el mensaje. Inténtalo nuevamente.",
+        "EMPTY_FIELDS": "Por favor, completa todos los campos antes de enviar.",
+        "INVALID_EMAIL": "Por favor, ingresa un correo electrónico válido."
     }
 }

@@ -46,3 +46,26 @@
 main {
     padding: 2rem;
 }
+
+.lang-select {
+    background: #fff;
+    color: #00a896;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border: 2px solid #00d1b2;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+
+    &:hover {
+        background-color: #e6f7f5;
+        border-color: #00bfa0;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #00796b;
+    }
+}

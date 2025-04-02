@@ -58,5 +58,49 @@
       "DATES": "2016 – 2021 · Ecuador",
       "DESC": "I developed a collaborative web and mobile app to promote sustainable development using <strong>React</strong>, <strong>Flutter</strong>, <strong>Node.js</strong>, and <strong>Firebase</strong>. I also created a mobile app in <strong>Java</strong> for text recognition in images, among other personal projects."
     }
+  },
+  "PROJECTS_SECTION": {
+    "TITLE": "Projects",
+    "GESTIONA": {
+      "TITLE": "Gestiona App",
+      "SUBTITLE": "CoopMego",
+      "DESCRIPTION_1": "Mobile app for sales and collections: schedule visits, record sales, simulate financial products, and manage customer interests.",
+      "DESCRIPTION_2": "I participated in the backend development of this mobile application for CoopMego's business and collections advisors.",
+      "LINK": "View on Play Store"
+    },
+    "LS_WEB": {
+      "TITLE": "Loja Sostenible Web",
+      "DESCRIPTION_1": "Web platform to promote the Sustainable Development Goals (SDGs) in Loja. Facilitates collaboration between citizens, organizations, and institutions.",
+      "DESCRIPTION_2": "Allows user registration, post management, comment interaction, survey creation, and access to informative sections.",
+      "LINK_FRONT": "View on GitHub (Frontend)",
+      "LINK_BACK": "View Backend"
+    },
+    "LS_MOBILE": {
+      "TITLE": "Loja Sostenible App",
+      "SUBTITLE": "Mobile",
+      "DESCRIPTION_1": "Mobile application designed to promote the Sustainable Development Goals (SDGs) in Loja. Built with Flutter, it offers a friendly cross-platform experience.",
+      "DESCRIPTION_2": "Users can register, explore posts, interact through comments, participate in surveys, and contribute content related to the SDGs.",
+      "LINK_FRONT": "View on GitHub (Frontend)",
+      "LINK_BACK": "View Backend"
+    },
+    "DIGIMENU": {
+      "TITLE": "Digital Menu Web",
+      "DESCRIPTION_1": "Web platform for restaurants to display interactive digital menus in an organized, accessible, and appealing way.",
+      "DESCRIPTION_2": "Restaurants can showcase their categories and featured items, allowing users to easily browse the menu, filter by category, and view prices, descriptions, and images.",
+      "DESCRIPTION_3": "Includes an admin panel to manage categories and menu items, all in a modern and responsive experience.",
+      "LINK": "View Deployed Site"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "TITLE_FIELD": "Subject",
+    "MESSAGE": "Message",
+    "SEND": "Send message",
+    "SUCCESS": "Message sent successfully!",
+    "ERROR": "There was an error sending the message. Please try again.",
+    "EMPTY_FIELDS": "Please fill in all fields before sending.",
+    "INVALID_EMAIL": "Please enter a valid email address."
   }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import i18next from 'i18next';
 
 @Component({
   standalone: true,
@@ -10,6 +11,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   imports: [CommonModule, SlickCarouselModule]
 })
 export class ProjectsComponent {
+  t = i18next.t;
+
   gestionImages = [
     'assets/imgs/proyectos/gestiona/p1.webp',
     'assets/imgs/proyectos/gestiona/p2.webp',
@@ -45,6 +48,7 @@ export class ProjectsComponent {
     'assets/imgs/proyectos/digimenu/p4.webp',
     'assets/imgs/proyectos/digimenu/p5.webp'
   ];
+
   selectedGestionaImage = this.gestionImages[0];
   selectedLsWebImage = this.lsWebImages[0];
   selectedLsMovilImage = this.lsMovilImages[0];

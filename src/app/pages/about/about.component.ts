@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // ✅ IMPORTANTE
+import { CommonModule } from '@angular/common';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import i18next from 'i18next';
 
