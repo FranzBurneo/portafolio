@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/portafolio/browser"
+  command = "ng build --configuration production"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  # Esto evita que se active automáticamente
+  inputs = { skip = true }
