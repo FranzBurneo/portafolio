@@ -24,7 +24,7 @@ export class HomeComponent {
 
   private setCvUrl(lang: string) {
     this.cvUrl = lang === 'en'
-      ? 'assets/FranzBurneo_en5.pdf'
-      : 'assets/FranzBurneo_es65.pdf';
+      ? 'assets/FranzBurneo_en6.pdf'
+      : 'assets/FranzBurneo_es8.pdf';
   }
 }
