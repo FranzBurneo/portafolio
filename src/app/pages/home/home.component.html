@@ -1,17 +1,22 @@
 <section class="hero">
     <div class="content">
         <h1>
-            Hola, soy <span class="highlight">Franz Burneo</span>
+            {{ t('HOME_SECTION.GREETING') }}
+            <span class="highlight">Franz Burneo</span>
         </h1>
-        <h2>Desarrollador Full Stack</h2>
+        <h2>{{ t('HOME_SECTION.ROLE') }}</h2>
+
         <p>
-            Ingeniero en Sistemas con más de 3 años de experiencia en desarrollo de software. Apasionado por crear
-            soluciones escalables y eficientes usando tecnologías como .NET, C#, React y PostgreSQL.
+            {{ t('HOME_SECTION.DESCRIPTION') }}
         </p>
 
         <div class="buttons">
-            <a href="assets/FranzBurneo_es65.pdf" target="_blank" class="btn primary">Descargar CV</a>
-            <a routerLink="/projects" class="btn secondary">Ver proyectos</a>
+            <a href="assets/FranzBurneo_es65.pdf" target="_blank" class="btn primary">
+                {{ t('HOME_SECTION.DOWNLOAD_CV') }}
+            </a>
+            <a routerLink="/projects" class="btn secondary">
+                {{ t('HOME_SECTION.VIEW_PROJECTS') }}
+            </a>
         </div>
 
         <div class="social-links">

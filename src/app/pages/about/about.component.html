@@ -1,58 +1,34 @@
 <section class="about">
     <div class="about-content">
+        <h2>{{ t('ABOUT_SECTION.TITLE') }}</h2>
 
-        <h2>Sobre mí</h2>
-
-        <p class="intro">
-            👋 Soy <strong>Franz Burneo</strong>, Ingeniero en Sistemas con más de 3 años de experiencia construyendo
-            soluciones digitales de alto impacto.
-        </p>
-
-        <p class="bio">
-            Trabajo actualmente en el sector financiero liderando proyectos de automatización y optimización de
-            procesos. Me encanta construir software moderno con <strong>.NET, C#, PostgreSQL, React</strong> y más.
-        </p>
-
-        <p class="bio">
-            Estoy en constante aprendizaje, explorando temas como <strong>DevOps, microservicios, seguridad</strong> y
-            <strong>arquitectura escalable</strong>.
-        </p>
+        <p class="intro" [innerHTML]="t('ABOUT_SECTION.INTRO')"></p>
+        <p class="bio" [innerHTML]="t('ABOUT_SECTION.BIO_1')"></p>
+        <p class="bio" [innerHTML]="t('ABOUT_SECTION.BIO_2')"></p>
 
         <!-- Fortalezas -->
         <div class="section reveal" appScrollReveal>
-            <h3>Fortalezas</h3>
+            <h3>{{ t('ABOUT_SECTION.STRENGTHS_TITLE') }}</h3>
             <div class="cards">
-                <div class="card">💼 3+ años de experiencia en desarrollo de software</div>
-                <div class="card">📱 Desarrollo web y móvil con buenas prácticas</div>
-                <div class="card">🗃️ SQL/NoSQL con enfoque en rendimiento</div>
-                <div class="card">🛡️ Seguridad, calidad y arquitectura limpia</div>
-                <div class="card">📚 Autodidacta, curioso y proactivo</div>
+                <div class="card" *ngFor="let s of strengths">{{ s }}</div>
             </div>
         </div>
 
         <!-- Experiencia laboral -->
         <div class="section reveal" appScrollReveal>
-            <h3>Experiencia laboral</h3>
+            <h3>{{ t('ABOUT_SECTION.EXPERIENCE_TITLE') }}</h3>
 
-            <!-- Card: Desarrollador de Software -->
             <div class="experience-card">
                 <div class="header">
-                    <h4>Desarrollador de Software</h4>
+                    <h4>{{ t('ABOUT_SECTION.EXPERIENCE_1.ROLE') }}</h4>
                     <a href="https://coopmego.fin.ec" target="_blank" rel="noopener">
-                        CoopMego | Cooperativa de Ahorro y Crédito
+                        {{ t('ABOUT_SECTION.EXPERIENCE_1.COMPANY') }}
                     </a>
-                    <p class="meta">Jun 2022 – Presente · Ecuador</p>
+                    <p class="meta">{{ t('ABOUT_SECTION.EXPERIENCE_1.DATES') }}</p>
                 </div>
 
                 <ul class="responsibilities">
-                    <li>Líder de proyectos.</li>
-                    <li>Aplicación móvil para la venta de productos financieros y cobranza.</li>
-                    <li>Vinculación de clientes, empleados y proveedores con soluciones personalizadas.</li>
-                    <li>Alertas y registro de Personas Políticamente Expuestas (PEP).</li>
-                    <li>Comprobantes electrónicos autorizados por el SRI.</li>
-                    <li>Migración de tecnologías y mantenimiento de sistemas legacy.</li>
-                    <li>Soporte a sistemas de cobranzas, RRHH, facturación y más.</li>
-                    <li>Reportería avanzada con SQL Server, PostgreSQL y Sybase.</li>
+                    <li *ngFor="let task of exp1Tasks">{{ task }}</li>
                 </ul>
 
                 <div class="tech-stack">
@@ -72,50 +48,39 @@
                     <span>Jenkins</span>
                     <span>CI/CD</span>
                     <span>Scrum</span>
-                    <span>Microservicios</span>
+                    <span>Microservices</span>
                     <span>PHP</span>
                     <span>etc.</span>
                 </div>
             </div>
 
-            <!-- Card: Pasante de Tecnología -->
             <div class="experience-card">
                 <div class="header">
-                    <h4>Pasante de Tecnología</h4>
+                    <h4>{{ t('ABOUT_SECTION.EXPERIENCE_2.ROLE') }}</h4>
                     <a href="https://coopmego.fin.ec" target="_blank" rel="noopener">
                         CoopMego | Cooperativa de Ahorro y Crédito
                     </a>
-                    <p class="meta">Dic 2021 – Jun 2022 · Ecuador</p>
+                    <p class="meta">{{ t('ABOUT_SECTION.EXPERIENCE_2.DATES') }}</p>
                 </div>
 
                 <ul class="responsibilities">
-                    <li>Análisis de requerimientos.</li>
-                    <li>Control de calidad (QA).</li>
-                    <li>Soporte a sistemas internos y documentación técnica.</li>
+                    <li *ngFor="let task of exp2Tasks">{{ task }}</li>
                 </ul>
             </div>
         </div>
 
         <!-- Educación -->
         <div class="section reveal" appScrollReveal>
-            <h3>Educación</h3>
+            <h3>{{ t('ABOUT_SECTION.EDUCATION_TITLE') }}</h3>
 
             <div class="education-card">
                 <div class="header">
-                    <h4>Ingeniería en Sistemas Informáticos y Computación</h4>
-                    <p class="institution">
-                        Universidad Técnica Particular de Loja (UTPL)
-                    </p>
-                    <p class="meta">2016 – 2021 · Ecuador</p>
+                    <h4>{{ t('ABOUT_SECTION.EDUCATION.DEGREE') }}</h4>
+                    <p class="institution">{{ t('ABOUT_SECTION.EDUCATION.UNIVERSITY') }}</p>
+                    <p class="meta">{{ t('ABOUT_SECTION.EDUCATION.DATES') }}</p>
                 </div>
 
-                <p class="description">
-                    Realicé una aplicación colaborativa web y móvil para incentivar el desarrollo sostenible, utilizando
-                    <strong>React</strong>, <strong>Flutter</strong>, <strong>Node.js</strong> y
-                    <strong>Firebase</strong>.
-                    También desarrollé una aplicación móvil en <strong>Java</strong> para reconocimiento de texto en
-                    imágenes, entre otros proyectos personales.
-                </p>
+                <p class="description" [innerHTML]="t('ABOUT_SECTION.EDUCATION.DESC')"></p>
 
                 <div class="tech-stack">
                     <span>React</span>
@@ -126,7 +91,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </section>

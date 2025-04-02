@@ -1,11 +1,16 @@
 <header class="navbar">
   <div class="logo">Franz<span>Burneo</span></div>
   <nav>
-    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
-    <a routerLink="/about" routerLinkActive="active">Sobre mí</a>
-    <a routerLink="/projects" routerLinkActive="active">Proyectos</a>
-    <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+    <a routerLink="/home" routerLinkActive="active">{{ t('NAV.HOME') }}</a>
+    <a routerLink="/about" routerLinkActive="active">{{ t('NAV.ABOUT_ME') }}</a>
+    <a routerLink="/projects" routerLinkActive="active">{{ t('NAV.PROJECTS') }}</a>
+    <a routerLink="/contact" routerLinkActive="active">{{ t('NAV.CONTACT') }}</a>
   </nav>
+
+  <select #langSelect (change)="changeLang(langSelect.value)">
+    <option value="es">ES</option>
+    <option value="en">EN</option>
+  </select>
 </header>
 
 <main>

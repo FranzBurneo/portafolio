@@ -1,0 +1,62 @@
+{
+    "NAV": {
+        "HOME": "Inicio",
+        "ABOUT_ME": "Sobre mí",
+        "PROJECTS": "Proyectos",
+        "CONTACT": "Contacto"
+    },
+    "WELCOME_MESSAGE": "Bienvenido a mi portafolio",
+    "HOME_SECTION": {
+        "GREETING": "Hola, soy",
+        "ROLE": "Desarrollador Full Stack",
+        "DESCRIPTION": "Ingeniero en Sistemas con más de 3 años de experiencia en desarrollo de software. Apasionado por crear soluciones escalables y eficientes usando tecnologías como .NET, C#, React y PostgreSQL.",
+        "DOWNLOAD_CV": "Descargar CV",
+        "VIEW_PROJECTS": "Ver proyectos"
+    },
+    "ABOUT_SECTION": {
+        "TITLE": "Sobre mí",
+        "INTRO": "👋 Soy <strong>Franz Burneo</strong>, Ingeniero en Sistemas con más de 3 años de experiencia construyendo soluciones digitales de alto impacto.",
+        "BIO_1": "Trabajo actualmente en el sector financiero liderando proyectos de automatización y optimización de procesos. Me encanta construir software moderno con <strong>.NET, C#, PostgreSQL, React</strong> y más.",
+        "BIO_2": "Estoy en constante aprendizaje, explorando temas como <strong>DevOps, microservicios, seguridad</strong> y <strong>arquitectura escalable</strong>.",
+        "STRENGTHS_TITLE": "Fortalezas",
+        "STRENGTHS": [
+            "💼 3+ años de experiencia en desarrollo de software",
+            "📱 Desarrollo web y móvil con buenas prácticas",
+            "🗃️ SQL/NoSQL con enfoque en rendimiento",
+            "🛡️ Seguridad, calidad y arquitectura limpia",
+            "📚 Autodidacta, curioso y proactivo"
+        ],
+        "EXPERIENCE_TITLE": "Experiencia laboral",
+        "EXPERIENCE_1": {
+            "ROLE": "Desarrollador de Software",
+            "COMPANY": "CoopMego | Cooperativa de Ahorro y Crédito",
+            "DATES": "Jun 2022 – Presente · Ecuador",
+            "TASKS": [
+                "Líder de proyectos.",
+                "Aplicación móvil para la venta de productos financieros y cobranza.",
+                "Vinculación de clientes, empleados y proveedores con soluciones personalizadas.",
+                "Alertas y registro de Personas Políticamente Expuestas (PEP).",
+                "Comprobantes electrónicos autorizados por el SRI.",
+                "Migración de tecnologías y mantenimiento de sistemas legacy.",
+                "Soporte a sistemas de cobranzas, RRHH, facturación y más.",
+                "Reportería avanzada con SQL Server, PostgreSQL y Sybase."
+            ]
+        },
+        "EXPERIENCE_2": {
+            "ROLE": "Pasante de Tecnología",
+            "DATES": "Dic 2021 – Jun 2022 · Ecuador",
+            "TASKS": [
+                "Análisis de requerimientos.",
+                "Control de calidad (QA).",
+                "Soporte a sistemas internos y documentación técnica."
+            ]
+        },
+        "EDUCATION_TITLE": "Educación",
+        "EDUCATION": {
+            "DEGREE": "Ingeniería en Sistemas Informáticos y Computación",
+            "UNIVERSITY": "Universidad Técnica Particular de Loja (UTPL)",
+            "DATES": "2016 – 2021 · Ecuador",
+            "DESC": "Realicé una aplicación colaborativa web y móvil para incentivar el desarrollo sostenible, utilizando <strong>React</strong>, <strong>Flutter</strong>, <strong>Node.js</strong> y <strong>Firebase</strong>. También desarrollé una aplicación móvil en <strong>Java</strong> para reconocimiento de texto en imágenes, entre otros proyectos personales."
+        }
+    }
+}

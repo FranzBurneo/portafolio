@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT_ME": "About Me",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "WELCOME_MESSAGE": "Welcome to my portfolio",
+  "HOME_SECTION": {
+    "GREETING": "Hi, I’m",
+    "ROLE": "Full Stack Developer",
+    "DESCRIPTION": "Systems Engineer with over 3 years of experience in software development. Passionate about building scalable and efficient solutions using technologies such as .NET, C#, React, and PostgreSQL.",
+    "DOWNLOAD_CV": "Download CV",
+    "VIEW_PROJECTS": "View Projects"
+  },
+  "ABOUT_SECTION": {
+    "TITLE": "About Me",
+    "INTRO": "👋 I’m <strong>Franz Burneo</strong>, a Systems Engineer with over 3 years of experience building high-impact digital solutions.",
+    "BIO_1": "I currently work in the financial sector leading automation and process optimization projects. I love building modern software with <strong>.NET, C#, PostgreSQL, React</strong>, and more.",
+    "BIO_2": "I’m constantly learning, exploring topics like <strong>DevOps, microservices, security</strong>, and <strong>scalable architecture</strong>.",
+    "STRENGTHS_TITLE": "Strengths",
+    "STRENGTHS": [
+      "💼 3+ years of experience in software development",
+      "📱 Web and mobile development with best practices",
+      "🗃️ SQL/NoSQL with performance focus",
+      "🛡️ Security, quality, and clean architecture",
+      "📚 Self-taught, curious, and proactive"
+    ],
+    "EXPERIENCE_TITLE": "Work Experience",
+    "EXPERIENCE_1": {
+      "ROLE": "Software Developer",
+      "COMPANY": "CoopMego | Savings and Credit Cooperative",
+      "DATES": "Jun 2022 – Present · Ecuador",
+      "TASKS": [
+        "Project leader.",
+        "Mobile app for selling financial products and collections.",
+        "Linking clients, employees, and providers with custom solutions.",
+        "PEP (Politically Exposed Person) alert and registry.",
+        "Electronic receipts authorized by SRI.",
+        "Technology migration and legacy system maintenance.",
+        "Support for collections, HR, billing, and more.",
+        "Advanced reporting with SQL Server, PostgreSQL, and Sybase."
+      ]
+    },
+    "EXPERIENCE_2": {
+      "ROLE": "Technology Intern",
+      "DATES": "Dec 2021 – Jun 2022 · Ecuador",
+      "TASKS": [
+        "Requirements analysis.",
+        "Quality assurance (QA).",
+        "Support for internal systems and technical documentation."
+      ]
+    },
+    "EDUCATION_TITLE": "Education",
+    "EDUCATION": {
+      "DEGREE": "Computer Systems Engineering",
+      "UNIVERSITY": "Technical University of Loja (UTPL)",
+      "DATES": "2016 – 2021 · Ecuador",
+      "DESC": "I developed a collaborative web and mobile app to promote sustainable development using <strong>React</strong>, <strong>Flutter</strong>, <strong>Node.js</strong>, and <strong>Firebase</strong>. I also created a mobile app in <strong>Java</strong> for text recognition in images, among other personal projects."
+    }
+  }
+}
