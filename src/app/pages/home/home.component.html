@@ -11,10 +11,10 @@
         </p>
 
         <div class="buttons">
-            <a href="assets/FranzBurneo_es65.pdf" target="_blank" class="btn primary">
+            <a [href]="cvUrl" download class="btn primary">
                 {{ t('HOME_SECTION.DOWNLOAD_CV') }}
             </a>
-            <a routerLink="/projects" class="btn secondary">
+            <a [routerLink]="['/projects']" class="btn secondary">
                 {{ t('HOME_SECTION.VIEW_PROJECTS') }}
             </a>
         </div>
