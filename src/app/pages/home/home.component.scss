@@ -1,10 +1,11 @@
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fafafa 90%, #ffffff 100%);
 
     .content {
         max-width: 800px;
@@ -103,7 +104,18 @@
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem 2rem 1rem;
+        min-height: auto;
+    }
+
     .hero .content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 1rem; // 👈 Este es el ajuste clave para evitar que se pegue a los bordes
+        box-sizing: border-box;
+
         h1 {
             font-size: 2rem;
         }
@@ -131,23 +143,5 @@
                 margin: 0.3rem 0.6rem;
             }
         }
-    }
-
-    .content {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .buttons .btn {
-        min-width: 140px;
-        text-align: center;
-    }
-
-    .hero {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 2rem 1rem;
     }
 }
