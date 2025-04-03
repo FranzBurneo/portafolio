@@ -1,12 +1,14 @@
 .contact-section {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     background-color: #fafafa;
     text-align: center;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #fafafa 90%, #ffffff 100%);
 
     h2 {
         font-size: 2.2rem;
         color: #00d1b2;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .description {
@@ -15,12 +17,17 @@
         font-size: 1rem;
     }
 
-    form {
+    form.contact-form {
         max-width: 600px;
+        width: 100%;
         margin: 0 auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
 
         .form-group {
-            margin-bottom: 1.5rem;
 
             input,
             textarea {
@@ -32,6 +39,7 @@
                 font-family: inherit;
                 resize: vertical;
                 transition: border 0.3s ease;
+                box-sizing: border-box;
 
                 &:focus {
                     outline: none;
@@ -53,10 +61,21 @@
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s ease;
+            width: fit-content;
+            align-self: center;
 
             &:hover {
                 background-color: #00bfa0;
             }
+        }
+    }
+
+    // Asegura que en pantallas pequeñas todo se ajuste bien
+    @media (max-width: 480px) {
+        padding: 3rem 1rem;
+
+        form.contact-form {
+            padding: 0;
         }
     }
 }

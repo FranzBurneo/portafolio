@@ -204,3 +204,50 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .about {
+      padding: 2rem 1rem;
+  
+      .about-content {
+        h2 {
+          font-size: 2rem;
+        }
+  
+        .intro {
+          font-size: 1.2rem;
+        }
+  
+        .bio {
+          font-size: 1rem;
+          text-align: justify;
+        }
+  
+        .section {
+          padding-top: 2rem;
+  
+          h3 {
+            font-size: 1.4rem;
+          }
+        }
+  
+        .cards {
+          grid-template-columns: 1fr; // una columna para más claridad
+        }
+      }
+  
+      .experience-card,
+      .education-card {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+  
+        .header h4 {
+          font-size: 1.2rem;
+        }
+  
+        .tech-stack span {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  

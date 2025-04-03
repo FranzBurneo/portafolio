@@ -1,16 +1,20 @@
 <header class="navbar">
   <div class="logo">Franz<span>Burneo</span></div>
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">{{ t('NAV.HOME') }}</a>
-    <a routerLink="/about" routerLinkActive="active">{{ t('NAV.ABOUT_ME') }}</a>
-    <a routerLink="/projects" routerLinkActive="active">{{ t('NAV.PROJECTS') }}</a>
-    <a routerLink="/contact" routerLinkActive="active">{{ t('NAV.CONTACT') }}</a>
-  </nav>
 
-  <select [(ngModel)]="selectedLang" (change)="changeLang(selectedLang)" class="lang-select">
-    <option value="es">ES</option>
-    <option value="en">EN</option>
-  </select>    
+  <div class="actions">
+    <button class="hamburger" (click)="toggleMenu()">☰</button>
+    <select [(ngModel)]="selectedLang" (change)="changeLang(selectedLang)" class="lang-select">
+      <option value="es">ES</option>
+      <option value="en">EN</option>
+    </select>
+  </div>
+
+  <nav [class.open]="menuOpen">
+    <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">{{ t('NAV.HOME') }}</a>
+    <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">{{ t('NAV.ABOUT_ME') }}</a>
+    <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">{{ t('NAV.PROJECTS') }}</a>
+    <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">{{ t('NAV.CONTACT') }}</a>
+  </nav>
 </header>
 
 <main>

@@ -101,3 +101,53 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 480px) {
+    .hero .content {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .buttons {
+            flex-direction: column;
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        .social-links {
+            a {
+                display: inline-block;
+                margin: 0.3rem 0.6rem;
+            }
+        }
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .buttons .btn {
+        min-width: 140px;
+        text-align: center;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+    }
+}

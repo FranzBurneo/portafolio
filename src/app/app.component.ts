@@ -12,6 +12,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   selectedLang = 'es';
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+  
+  closeMenu() {
+    this.menuOpen = false;
+  }
 
   get t() {
     return i18next.t;
